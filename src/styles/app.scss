@@ -1,0 +1,12 @@
+@import '_tools/_tools';
+@include font-face('Arimo', '../fonts/Arimo/ArimoRegular/ArimoRegular', null, null, eot ttf woff);
+
+
+h1{
+    color: green;
+    font-family: 'Arimo';
+}
+
+body{
+    background: url("../images/site/1.jpg")  no-repeat;
+}
