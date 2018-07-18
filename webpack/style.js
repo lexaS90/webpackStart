@@ -23,7 +23,7 @@ module.exports = function(env, argv){
         },
         plugins: [
             new MiniCssExtractPlugin({
-                filename: "css/app.css",
+                filename: $.CONFIG.dist.style,
             })
         ],
     }

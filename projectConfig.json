@@ -1,0 +1,17 @@
+{
+  "blocks": {},
+  "path": {
+    "src": {
+      "srcPath": "src",
+      "blocksDirName": "blocks",
+      "script": "/scripts/app.js",
+      "images": "images"
+    },
+    "dist": {
+      "buildPath": "dist",
+      "script": "assets/js/app.js",
+      "style": "assets/css/app.css",
+      "images": "assets/images"
+    }
+  }
+}

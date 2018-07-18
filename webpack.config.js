@@ -1,3 +1,5 @@
+const jsonConfig = require('./projectConfig.json');
+
 const path = require('path');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,10 +13,13 @@ const images = require('./webpack/images');
 const devserver = require('./webpack/devserver');
 const fonts = require('./webpack/fonts');
 
+const config = jsonConfig.path;
+
 global.$ = {
-    PATH: {
-        source: path.join(__dirname, 'src'),
-        build: path.join(__dirname, 'dist'),
+    CONFIG: config,
+    PATH: {        
+        source: path.join(__dirname, config.src.srcPath),
+        build: path.join(__dirname, config.dist.buildPath),
     }
 }
 
@@ -28,12 +33,12 @@ module.exports = function(env, argv){
                 },
                 
                 entry: {
-                    'js/app.js': $.PATH.source + '/scripts/app.js',
+                    'js/app.js': $.PATH.source + '/' + config.src.script,
                 },
                 devtool: 'inline-source-map',
                 output: {
                     path: $.PATH.build,
-                    filename: '[name]',
+                    filename: config.dist.script,
                 }
             }            
     
@@ -41,7 +46,8 @@ module.exports = function(env, argv){
     );
 
     return merge([
-        common,        
+        common,
+        script(env, argv),
         images(env, argv),
         pug(env, argv),
         style(env, argv),

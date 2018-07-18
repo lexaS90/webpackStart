@@ -24,8 +24,8 @@ module.exports = function(env, argv) {
         plugins: [
           // Copy the images folder and optimize all the images
         new CopyWebpackPlugin([{
-        from: $.PATH.source + '/images/',
-        to: $.PATH.build + '/images/',
+        from: $.PATH.source + '/' + $.CONFIG.src.images + '/',
+        to: $.PATH.build + '/' + $.CONFIG.dist.images + '/',
         }]),
         new ImageminPlugin({
             test: /\.(jpe?g|png|gif|svg)$/i,
