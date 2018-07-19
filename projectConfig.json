@@ -1,5 +1,7 @@
 {
-  "blocks": {},
+  "blocks": {
+    "testBlock": []
+  },
   "path": {
     "src": {
       "srcPath": "src",

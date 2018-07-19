@@ -8,9 +8,9 @@ module.exports = function(env, argv) {
                         {
                             loader: 'file-loader',
                             options: {
-                                name: '[path][name].[ext]',
+                                name: 'assets/fonts/[name].[ext]',
                                 context: $.PATH.source,
-                                publicPath: '../'
+                                publicPath: '../../'
                             },
                         }
                     ],

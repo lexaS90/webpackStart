@@ -3,4 +3,6 @@
  * Не пишите сюда ничего вручную, все такие правки будут потеряны при следующей компиляции.
  */
 
-@import '../blocks/testBlock/testBlock.scss';
+module.exports = function () {
+  require( '../blocks/testBlock/testBlock.js')();
+}
