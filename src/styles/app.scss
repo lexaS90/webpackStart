@@ -1,9 +1,25 @@
-@import '_tools/_tools';
+/**
+ * Components
+ */
+ @import '~normalize.css/normalize.css';
+
+/**
+ * Tools
+ */
+ @import '_tools/function';
+ @import '_tools/variables';
+ @import '_tools/mixins';
+ @import '_tools/grid';
+
+ /**
+ * Base
+ */
+ @import '_base/reboot';
+ @import '_base/fonts';
+ @import '_base/typography';
+ @import '_base/custom';
+
+ /**
+ * Blocks
+ */
 @import '_blocks';
-@include font-face('Arimo', '../fonts/Arimo/ArimoRegular/ArimoRegular', null, null, eot ttf woff);
-
-
-h1{
-    color: green;
-    font-family: 'Arimo';
-}

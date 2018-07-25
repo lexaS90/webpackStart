@@ -1,0 +1,126 @@
+// =============================================================================
+// Custom variables
+// =============================================================================
+
+
+
+/*
+ * Fonts
+ */
+
+$main-font-family: 'Geometria';
+//$accent-font-family: 'EtelkaMediumPro';
+$main-font-size: 16px;
+
+
+/*
+ * Color
+ */
+$color-green: #4CAF50;
+$color-red: #F44336;
+
+$text-color: #333;
+$accent-text-color: #000;
+$main-color: #009dea;
+$accent-color: #d93603;
+$success-color: $color-green;
+$error-color: $color-red;
+$disable-color: #D2D2D2;
+$color-tint: 9 !default;
+
+/*
+ * Link
+ */
+
+$link-color: $main-color;
+$link-color-hover: lighten($main-color, 30%);
+$link-color-focus: darken($main-color, 30%);
+
+/*
+ * Img
+ */
+
+$img-folder: '../img/';
+$img-site-folder: '../img/site/';
+$img-content-folder: '../img/content/';
+
+
+/*
+ * Grid
+ */
+
+$break_lg: 1200px;
+$break_md: 992px;
+$break_sm: 720px;
+$break_xs: 576px;
+
+/*
+ *  Mobile switch
+ */
+
+
+$mobile-switch: $break_md;
+
+
+// =============================================================================
+// Reload variables
+// =============================================================================
+
+/*
+ *  Nav bar
+ */
+
+// Фон навигации
+$nav-background-color: #ececea;
+
+// Цвет текста навигации
+$nav-color: #434343;
+
+// Высота шрифта
+$nav-font-size: 16px;
+
+// Цвет фона пункта меню навигации
+$nav-item-hover-background-color: transparent;
+
+// Цвет текста пункта меню навигации при наведении
+$nav-item-hover-color: $accent-color;
+
+// Отступ сверху и снизу меню
+$nav-padding: 0;
+
+// Отступ слева и справа пункта меню (только в em)
+$nav-item-padding: 1.1em;
+
+// Высота меню
+$nav-height: 80px;
+
+// Высота пунктаменю
+$nav-item-height: 40px;
+
+// Цвет фона активного пункта меню
+$nav-item-active-background-color: transparent;
+
+// Цвет текста активного пункта меню
+$nav-item-active-color: $accent-color;
+
+
+/*
+ *  Button
+ */
+
+$button-background-color: $main-color;
+
+// Внутренние отступы
+$button-padding: 12px 56px;
+
+$button-border-radius: 2px;
+$button-font-size: 1em;
+
+
+/*
+ *  Burger
+ */
+$burger-width: 30px;
+$burger-line-height: 5px;
+$burger-line-offset: 5px;
+$burger-color: #7c8287;

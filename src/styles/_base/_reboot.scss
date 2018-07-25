@@ -1,0 +1,55 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	font-size: $main-font-size;
+}
+
+body{
+	font-family: $main-font-family;	
+	min-width: 320px;
+	position: relative;
+	line-height: 1.4;
+	overflow-x: hidden;
+	color: $text-color;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #6b6b6b;
+  opacity: 1;
+  font-size: rem(15px);
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #6b6b6b;
+  opacity: 1;
+  font-size: rem(15px);
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #6b6b6b;
+  opacity: 1;
+  font-size: rem(15px);
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #6b6b6b;
+  opacity: 1;
+  font-size: rem(15px);
+}
+
+.hidden{
+	display: none;
+}

@@ -1,0 +1,11 @@
+.hq1{
+    display: flex;
+
+    @include media-max($break-md){
+        display: inline;
+    }
+}
+
+h1{
+    color: green;
+}
