@@ -43,6 +43,7 @@
     "webpack-sweet-entry": "^1.1.5"
   },
   "dependencies": {
+    "blaze": "^4.1.2",
     "normalize.css": "^8.0.0"
   }
 }
