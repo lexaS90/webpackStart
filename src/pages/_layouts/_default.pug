@@ -1,0 +1,35 @@
+//- Tools
+include ../_tools/_variables
+include ../_tools/_mixins
+
+//- Blocks
+include ../_blocks
+
+-
+	page = {
+		title: '',
+		home: 'page-body--not-home',
+	}
+
+block vars
+
+//- Documents
+doctype html
+html(lang="ru")
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		meta(name='description', content='')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+
+		link(rel='shortcut icon', href='assets/img/favicon/favicon.ico', type='image/x-icon')
+		link(rel='apple-touch-icon', href='assets/img/favicon/apple-touch-icon.png')
+		
+		link(rel='stylesheet', type='text/css', href='assets/css/app.min.css')
+
+		title= page.title
+    
+	body.page-body(class= page.home)
+		include ../_includes/_header
+		block content
+		include ../_includes/_footer

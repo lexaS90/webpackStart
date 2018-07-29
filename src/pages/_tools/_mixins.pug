@@ -1,0 +1,8 @@
+//- Svg icon
+    Приер:
+        +svgIcon('vk')
+        +svgIcon('vk', 'social')
+
+mixin svgIcon(icon, className)
+    svg(class= className).svg-icon
+        use(xlink:href="assets/img/svgSprite.svg#" + icon)

@@ -1,18 +1,11 @@
-include ./_blocks
+//- Default layouts
+extends _layouts/_default
 
-doctype html
-html(lang="ru")
-	head
-		meta(charset='utf-8')
-		meta(http-equiv='x-ua-compatible', content='ie=edge')
-		meta(name='description', content='')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
+//- Page variables
+block vars
+	- page.title = siteName
+	- page.home = 'page-body--is-home'
 
-		link(rel='shortcut icon', href='assets/img/favicon/favicon.ico', type='image/x-icon')
-		link(rel='apple-touch-icon', href='assets/img/favicon/apple-touch-icon.png')
- 
-		title Index
-
-	body
-		h1 Index2
-		img(src="images/site/FzndLogo.jpg", alt="Test")
+//- Page content
+block content
+	main Content
